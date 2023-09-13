@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@300&family=Libre+Baskerville&family=Poppins&family=Roboto&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <h1 class="title">Guess the number</h1>
+        <p>A number is randomly generated between 1 to 100 (both inclusive).</p>
+        <p> You have 10 attempts to guess it.</p>
+        <p> Good Luck!</p>
+        <h3>Enter your guess here</h3>
+        <input type="number" name="user_guess" id="user_guess" min="1" max="100">
+        <button class="btn" onclick="checkNumber()">Submit</button>
+        <p class="result">Results will be shown here</p>
+        <p class="previous">Previous Guesses: None</p>
+        <p class="remaining">Remaining Guesses: 10</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
